@@ -1,0 +1,58 @@
+/*__________border-box reset__________*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+
+/*__________general__________*/
+body, main, div, p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: blue;
+}
+
+main{
+    background: pink;
+    width: 1050px;
+    height: 550px;
+    margin: 0 auto;
+}
+
+/*__________content__________*/
+.box-size, .standard{
+    background: beige;
+    width: 760px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+div{
+    margin-bottom: 15px;
+}
+.standard p{
+    background: red;
+    box-sizing: content-box;
+}
+.box-size p{
+    background: green;
+      
+}
+.standard p, .box-size p{
+    width: 25%;
+    height: 60px;
+    margin: 10px;
+    padding: 15px;
+    border-radius:10px;
+    border: 5px solid black;
+    text-align: center;
+    font-size: 1.5em;
+}
